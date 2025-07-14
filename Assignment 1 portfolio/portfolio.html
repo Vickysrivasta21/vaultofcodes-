@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avnish Srivastava - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007acc;
+        }
+
+        a:hover {
+            color: #005a99;
+        }
+
+        nav {
+            background-color: #222;
+            color: #fff;
+            padding: 1rem 2rem;
+        }
+
+        nav h4 {
+            font-size: 1.5rem;
+        }
+
+        .about {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 2rem;
+            background-color: #fff;
+            margin: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .intro {
+            flex: 2;
+            padding-right: 1rem;
+        }
+
+        aside img {
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border: 3px solid #007acc;
+        }
+        .skills {
+            background-color: #fff;
+            margin: 1rem;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .skills ul {
+            list-style-type:circle;
+            margin-left: 2rem;
+            margin-top: 0.5rem;
+        }
+        .projectSection {
+            background-color: #fff;
+            margin: 1rem;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .projectSection h2{
+            color: #007acc;
+            margin-bottom: 0.5rem;
+        }
+
+        .projectSection p {
+            margin-bottom: 1rem;
+        }
+
+        .projectSection a {
+            font-weight: bold;
+        }
+
+        .contacts {
+            background-color: white;
+            color: #030303;
+            padding: 2rem;
+            margin: 1rem;
+            border-radius: 10px;
+        }
+
+        .contacts ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+
+        .contacts li {
+            display: flex;
+            align-items: center;
+        }
+
+        .contacts li img {
+            width: 24px;
+            height: 24px;
+            margin-right: 0.5rem;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .about {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .intro {
+                padding-right: 0;
+            }
+
+            aside {
+                margin-top: 1rem;
+            }
+
+            .contacts ul {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div>
+            <h4>My Portfolio</h4>
+        </div>
+    </nav>
+    <div class="about">
+        <section class="intro">
+            <div class="name">Nmae : Avnish srivastava</div>
+            <div class="educational-background">High School (97.80%) - S.K.D Academy (2020-2021)<br>Intermedite (91.4%) -
+                S.K.D Academy (2022-2023) <br>B.Tech in Computer Science and Engineering (8.90 CGPA - 4TH semester) -
+                Babasaheb bhimrao ambedkar University(A Central University) (2023-2027)</div>
+            <div class="intrestandintroduction">
+                <p>Frontend developer and Data science enthusiast with keen intrest in web development and having a
+                    strong foundation in data structures and strong academic background, I love to solve real world
+                    problem and build my skills with real world projects</p>
+            </div>
+        </section>
+        <aside>
+            <img src="Untitled design.png" alt="" width="50" height="50">
+        </aside>
+    </div>
+    <div class="skills">
+        <div class="skills">SKILLS :</div>
+        <ul>
+            <li>MERN development</li>
+            <li>Data Structures and Algorithms</li>
+            <li>MongoDB</li>
+            <li>Operating System</li>
+            <li>Java and Javascript Programming</li>
+        </ul>
+        <div class="technologies">
+            <div class="software">
+                Techonology Used :
+            </div>
+            <ul>
+                <li>VS Code</li>
+                <li>Postman</li>
+                <li>MongoDB</li>
+                <li>Latex</li>
+            </ul>
+        </div>
+        <div class="intrests">
+            <div class="personalintrest">
+                Intrests :
+            </div>
+            <ul>
+                <li>Frontend development</li>
+                <li>Backend development</li>
+                <li>Data science enthusiast</li>
+            </ul>
+        </div>
+    </div>
+    <div class="projectSection">
+        My Projects :
+        <div class="todo">
+            <h2>1. TODO list app using react : </h2>
+            <p class="explain">
+                Designed a modern todo app with priorities and deadlines, madde the structure using react and designing
+                using CSS it stores the data in local storage and also helps to maintain task in priority order, also
+                sorts each task according to the level of priority
+            </p>
+            <div class="links">See it : <a target="_blank"
+                    href="https://github.com/Vickysrivasta21/web-development-/tree/main/todo%20list%20app%20using%20React%20Project%205">Todo
+                    list app</a></div>
+        </div>
+        <div class="clones">
+            <h2>2. UI clones of Popular websites - Amazon ,Flipkart</h2>
+            <p class="explain">
+                designed UI clones of popular websites such as Amazon, Flipkart, Netflix, spotify using html css and
+                javascript , worked on responsiveness and SEO optimization using properties such as flex, grid layouts
+                practiced component based design and visual hierarchy using tools like canva for planning
+            </p>
+
+            <div class="links">See it here :
+                <ul>
+                    <li><a target="_blank"
+                            href="https://github.com/Vickysrivasta21/web-development-/tree/main/project%201%20amazon%20clone">Amazon
+                            Clone</a></li>
+                    <li><a target="_blank"
+                            href="https://github.com/Vickysrivasta21/web-development-/tree/main/project%202%20netflix%20clone%20in%20html%20n%20css">Netflix
+                            Clone</a></li>
+                    <li><a target="_blank"
+                            href="https://github.com/Vickysrivasta21/web-development-/tree/main/project%204%20spotify%20clone%20using%20html%20css%20and%20js">Spotify
+                            Clone</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="contacts">
+        Connect with me :
+        <ul>
+            <li><a target="_blank"
+                    href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJlHmlbTJsrTVtjScHkSqnhgMLgGCLwpkBRNMmFWTwSBjphwplLKmMkGGStTHfLQmnGgljq"><img
+                        src="Gmail_icon_(2020).svg.png"
+                        alt="">Email</a></li>
+            <li><a target="_blank" href="www.linkedin.com/in/avnish-srivastava-4952801b6"><img
+                        src="LinkedIn_icon.svg.webp"
+                        alt="">Linkedin</a></li>
+            <li><a target="_blank" href="https://github.com/Vickysrivasta21"><img
+                        src="github-fill-vuouq0ozezpemvb5gwnatr.webp"
+                        alt="">GitHub</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
